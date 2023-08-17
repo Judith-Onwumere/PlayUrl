@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayURL | Custom URL Shortener</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="" class="logo"><img src="img/logo.svg" alt="" srcset=""></a>
+    <div class="remove">
+      <ul class="nav-links">
+        <li class="nav-link"><a href="../Playnotes/1.html" target="_blank">PlayNotes</a></li>
+        <li class="nav-link"><a href="https://dictionary-by-jxc.netlify.app/" target="_blank">PlayWords</a></li>
+      </ul>
+    </div>
+    <div class="add">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="../Playnotes/1.html" target="_blank">PlayNotes</a>
+          <a href="https://dictionary-by-jxc.netlify.app/" target="_blank">Dictionary</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="img/menu.png" alt="" srcset=""></span>
+    </div>
+  </nav>
+
+  <!--
+  <nav>
+    <a href="" class="logo"><img src="img/logo.svg" alt="" srcset=""></a>
+    <div class="navbar">
+      <ul class="nav-links">
+          <li class="nav-link">
+          <a href="notes.html" class="link">Notes</a>
+        </li>
+        <li class="nav-link">
+          <a href="" class="link">Dictionary</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  -->
+  <!--
+  <header class="row container">
+    <a href="" class="logo"><img src="img/logo.svg" alt="" srcset=""></a>
+    <nav class="navigation row remove">
+      <ul class="row">
+        <li><a href="../PlayURL/short.html">PlayUrl</a></li>
+        <li><a href="https://dictionary-by-jxc.netlify.app/">PlayWords</a></li>
+      </ul>
+    </nav>
+    <nav class="navigation row add">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">PlayUrl</a>
+          <a href="#">Dictionary</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="img/menu.png" alt="" srcset=""></span>
+    </nav>
+  </header>
+  -->
+
+  <div class="hero">
+    <p>
+      <span class="header">Shorten Your Loooong Links :)</span>
+      <!--<span class="space">Links</span>-->
+    </p>
+    <p class="sub-heading">
+      PlayUrl is an efficient and easy-to-use URL shortening service that streamlines your online experience.
+    </p>
+  </div>
+  <div class="container">
+    <input type="text" id="longurl" placeholder="Enter URL to shorten" />
+    <button  id="shorten"><img src="img/send.png" alt=""><span class="btn-text">Shorten</span></button>
+  </div>
+  <div class="container-2">
+  <input type="text" id="shorturl" placeholder="" />
+  <button  id="copy"><img src="img/copy.png" alt=""></button>
+  </div>
+
+  <footer>
+    <p>&copy;2023 | Judith Onwumere</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
